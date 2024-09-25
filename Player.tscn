@@ -42,7 +42,7 @@ spring_length = 3.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.324435, 1.94295, 3.71633)
 
 [node name="CROW" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 8, 0)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 18, 0)
 cull_mask = 1048573
 
 [connection signal="dead" from="Helper" to="." method="_on_helper_dead"]
