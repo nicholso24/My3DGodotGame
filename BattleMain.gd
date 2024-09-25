@@ -15,7 +15,11 @@ var current_cam = CAMERA.STATIC
 func _ready() -> void:
 	$Player.position = $PlayerSpawn.position
 	$STATIC.current = true
-	
+
+func _input(event):
+	if current_cam == CAMERA.CAMERA:
+		if event is InputEventMouseMotion:
+			$CAMERA.rotate_y(deg_to_rad(-event.relative.x*sens_horizontal))
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
