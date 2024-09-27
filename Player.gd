@@ -2,18 +2,11 @@ extends CharacterBody3D
 
 class_name Player
 
-const CAMERA = preload("res://CameraEnum.gd")
 const SPEED = 15
 const JUMP_VELOCITY = 10
 
-var is_third = false
-var sens_horizontal = 0.2
-var sens_vertical = 0.2
-
 var health = 9
 var iframes =  false
-
-var cam_can_move = false
 
 signal death
 
